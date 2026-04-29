@@ -431,7 +431,7 @@ hr {
   width: 90%;
   margin: auto;
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid #28303E;
   margin-top: 40px;
   margin-bottom: 20px;
 }
