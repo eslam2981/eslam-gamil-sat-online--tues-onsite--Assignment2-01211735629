@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* global styles */
 
 body {
@@ -23,21 +27,47 @@ p {
   clear: both;
 }
 
+.sec1,
+.sec2,
+.sec3,
+.sec4,
+.sec_5,
+.sec_7 .cards,
+.footer-content {
+  width: 80%;
+  margin: 0 auto;
+}
 
 /* section 1 */
 
 .sec1 {
   margin-top: 100px;
+  overflow: hidden;
 }
 
 .content {
   float: left;
-  width: 50%;
-  margin: 40px 50px 0px 50px;
+  width: 48%;
+  margin-top: 0px;
+}
+
+.sec1 .content h1 {
+  font-size: 80px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+
+.img {
+  float: right;
+  width: 48%;
+  text-align: right;
 }
 
 .img img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 30px;
 }
 
@@ -66,8 +96,7 @@ p {
 
 /* section 2 */
 .sec2 {
-  width: 90%;
-  margin: auto;
+  margin-top: 100px;
 }
 
 .sec2_content {
@@ -89,7 +118,7 @@ p {
   height: 64px;
   border-radius: 15px;
   margin: auto;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .sec2 .box1 {
@@ -107,11 +136,10 @@ p {
 .sec2 .child1,
 .sec2 .child2,
 .sec2 .child3 {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   background-color: #ffffff;
-  margin: auto;
-  margin-top: 25%;
+  margin: 25% auto;
 }
 
 .sec2 .child1 {
@@ -129,14 +157,18 @@ p {
 .cards .card_1,
 .cards .card_2,
 .cards .card_3 {
-  width: calc(33.3333% - 80px);
+  width: 32%;
   float: left;
-  margin-inline: 20px;
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px 20px;
   text-align: center;
   margin-top: 25px;
-  min-height: 250px;
+  height: 300px;
+}
+
+.cards .card_1,
+.cards .card_2 {
+  margin-right: 2%;
 }
 
 .sec2 .card_1 {
@@ -151,18 +183,15 @@ p {
   background-color: #F3E8FF;
 }
 
-
 /* section 3 */
 .sec3 {
-  width: 90%;
-  margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .sec3_img {
   float: left;
-  width: 45%;
-  margin-top: 44px;
+  width: 48%;
+  margin-top: 70px;
 }
 
 .sec3_img img {
@@ -172,8 +201,7 @@ p {
 
 .sec3_content {
   float: right;
-  width: 45%;
-  margin-left: 60px;
+  width: 48%;
 }
 
 .sec3_content h2 {
@@ -187,16 +215,12 @@ p {
 .grouping .group2,
 .grouping .group3 {
   border-left: 5px solid black;
-  padding-left: 10px;
+  padding-left: 15px;
   margin-bottom: 30px;
 }
 
-
-/* section 4 */
 .sec4 {
-  width: 90%;
-  margin: auto;
-  margin-top: 50px;
+  margin-top: 100px;
   overflow: hidden;
 }
 
@@ -215,13 +239,17 @@ p {
 .sec4 .card1,
 .sec4 .card2,
 .sec4 .card3 {
-  width: calc(33.3333% - 84px);
-  margin-inline: 20px;
-  border-radius: 20px;
-  padding: 20px;
-  margin-top: 25px;
+  width: 32%;
   float: left;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 25px;
   min-height: 220px;
+}
+
+.sec4 .card1,
+.sec4 .card2 {
+  margin-right: 2%;
 }
 
 .sec4_cards .card1 {
@@ -239,51 +267,52 @@ p {
   border: 2px solid #E9D4FF;
 }
 
+.card_header {
+  overflow: hidden;
+}
+
 .card_header img {
+  float: left;
+  border-radius: 50%;
+  width: 60px;
+  margin-right: 15px;
+}
+
+.sec4_card_content {
   float: left;
 }
 
-.sec4_cards img {
-  border-radius: 50%;
-  width: 60px;
-  margin-right: 20px;
-}
-
 .sec4_cards .card_header h3 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #000000;
+  margin: 5px 0 0 0;
 }
 
 .sec4_cards .card_header h4 {
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
   color: #364153;
 }
 
 /* section 5 */
 .sec_5 {
-  width: 90%;
-  margin: auto;
   background-color: #F1F5F9;
-  margin-top: 50px;
+  margin-top: 80px;
   overflow: hidden;
   border-radius: 20px;
   border: #D1D5DC 1px solid;
+  padding: 20px 0;
 }
 
 .sec_5 .box1,
 .sec_5 .box2,
 .sec_5 .box3,
 .sec_5 .box4 {
-  width: calc(25% - 50px);
+  width: 25%;
   float: left;
-  margin-inline: 5px;
-  border-radius: 20px;
-  padding: 20px;
-  margin-top: 25px;
   text-align: center;
 }
 
@@ -291,18 +320,21 @@ p {
   font-size: 30px;
   font-weight: 900;
   color: #000000;
+  margin: 0;
 }
 
 .sec_5 h4 {
   font-size: 15px;
   font-weight: 300;
   color: #4A5565;
+  margin-top: 5px;
 }
 
 /* section 6 */
 .sec6_content {
   text-align: center;
-  margin-block: 100px;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 .sec_6 .form-container {
@@ -314,7 +346,6 @@ p {
 .half-width {
   float: left;
   width: 50%;
-  box-sizing: border-box;
 }
 
 .wrapper {
@@ -347,15 +378,10 @@ p {
   color: #4B5563;
   font-size: 16px;
   font-family: inherit;
-  box-sizing: border-box;
   margin-bottom: 20px;
   resize: none;
 }
 
-.form-group input::placeholder,
-.form-group textarea::placeholder {
-  color: #9CA3AF;
-}
 
 .form-container button {
   width: 100%;
@@ -377,27 +403,28 @@ p {
 
 /* section 7 */
 
-.sec_7 .cards {
+.sec_7 {
   width: 100%;
   background-color: #101828;
+  padding-top: 60px;
+  clear: both;
+}
+
+.sec_7 .cards {
   overflow: hidden;
 }
 
 .sec_7 .card {
   width: 33.333%;
   float: left;
-  box-sizing: border-box;
-  padding: 40px 40px;
-}
-
-.sec7_wrapper {
-  background-color: #101828;
+  padding-right: 40px;
 }
 
 .card h3,
 .card h2 {
   color: #FFFFFF;
   margin-bottom: 20px;
+  margin-top: 0;
 }
 
 .card p {
@@ -406,7 +433,8 @@ p {
 
 .card .button {
   float: left;
-  width: 33.3333%;
+  margin-right: 15px;
+  margin-top: 10px;
 }
 
 .card .button a {
@@ -428,19 +456,15 @@ p {
 }
 
 hr {
-  width: 90%;
-  margin: auto;
+  width: 85%;
+  margin: 40px auto 20px auto;
   border: none;
   border-top: 1px solid #28303E;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 .footer-content {
-  width: 90%;
-  margin: auto;
   overflow: hidden;
-  min-height: 70px;
+  padding-bottom: 30px;
 }
 
 .left {
